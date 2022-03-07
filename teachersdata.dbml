@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Managment" Class="teachersdataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-0LQQSL6\SQLEXPRESS;Initial Catalog=Managment;Integrated Security=True" SettingsObjectName="FinalWorkProject.Properties.Settings" SettingsPropertyName="ManagmentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TeacherData" Member="TeacherDatas">
+    <Type Name="TeacherData">
+      <Column Name="TeacherID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[First Name]" Member="First_Name" Type="System.String" DbType="NChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Last Name]" Member="Last_Name" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Surname" Type="System.String" DbType="NChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Date of Birth]" Member="Date_of_Birth" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="JoiningDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Religion" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="TeacherPicture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

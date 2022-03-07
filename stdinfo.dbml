@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Managment" Class="stdinfoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-0LQQSL6\SQLEXPRESS;Initial Catalog=Managment;Integrated Security=True" SettingsObjectName="FinalWorkProject.Properties.Settings" SettingsPropertyName="ManagmentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.StudentInformation" Member="StudentInformations">
+    <Type Name="StudentInformation">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="studentid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="surname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="admissiondate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="religion" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="fathername" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fatheroccup" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fphone" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
